@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap');
+    </style>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ad_space flex_align_center">
+        <span>Use this banner to advertise a special promotion -20% off!</span>
+    </div>
+    
+    <div class="hamburger_menu">
+        <button class="bold_700">STITCH REWARDS</button>
+        <button class="bold_700">QUICK ORDER</button>
+        <button class="bold_700">
+            <i class="fa-solid fa-map-location-dot"></i>
+            STORE LOCATOR
+        </button>
+        <button class="bold_700">CART</button>
+        <button class="bold_700">SIGN UP</button>
+        <button class="bold_700">LOG IN</button>
+        <button class="dropdown_trigger bold_700" id="top_thread">Top thread <i class="fa-solid fa-caret-down"></i></button>
+        <button class="dropdown_trigger bold_700" id="bobbins">Bobbins <i class="fa-solid fa-caret-down"></i></button>
+        <button class="dropdown_trigger bold_700" id="Stabilizer">Stabilizer <i class="fa-solid fa-caret-down"></i></button>
+        <button class="dropdown_trigger bold_700" id="displays">Displays <i class="fa-solid fa-caret-down"></i></button>
+        <button class="dropdown_trigger bold_700" id="notions">Notions <i class="fa-solid fa-caret-down"></i></button>
+    </div>
+
+    <header>
+        <div class="primary_navigation">
+
+            <div class="top_right_mobile">
+                <button class="bold_700"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="hamburger_button" onclick="open_menu()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <div class="top_left">
+                <button class="bold_700">STITCH REWARDS</button>
+                <button class="bold_700">QUICK ORDER</button>
+                <button class="bold_700">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    STORE LOCATOR
+                </button>
+            </div>
+            <div class="top_right">
+                <button class="bold_700">CART</button>
+                <button class="bold_700">SIGN UP</button>
+                <button class="bold_700">LOG IN</button>
+                <button class="bold_700" id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div> 
+        </div>
+        <div class="secondary_navigation flex_align_center">
+            <div class="logo"><img src="res/logo.png" alt="logo"></div>
+            <div class="middle_dropdowns">
+                <button class="dropdown_trigger bold_700" id="top_thread">Top thread <i class="fa-solid fa-caret-down"></i></button>
+                <button class="dropdown_trigger bold_700" id="bobbins">Bobbins <i class="fa-solid fa-caret-down"></i></button>
+                <button class="dropdown_trigger bold_700" id="Stabilizer">Stabilizer <i class="fa-solid fa-caret-down"></i></button>
+                <button class="dropdown_trigger bold_700" id="displays">Displays <i class="fa-solid fa-caret-down"></i></button>
+                <button class="dropdown_trigger bold_700" id="notions">Notions <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex_align_center main_banner">
+        <div class="call_to_action">
+            <p class="title"><h1>Add color to your masterpiece</h1></p>
+            <button class="transparent_btn btn_font">Shop Now</button>
+        </div>
+    </div>
+
+    <div class="carousel_wrapper">
+        <div class="carousel_controller">
+            <button> < </button>
+            <button> > </button>
+        </div>
+
+        <div class="carousel banner_title_font">
+
+            <div class="carousel_item">
+                <div class="image_wrapper"> <img src="res/carousel_1.jfif" alt="shop item" ></div>
+                <div class="item_name">NEDDLES</div>
+            </div>
+            <div class="carousel_item">
+                <div class="image_wrapper"> <img src="res/carousel_2.jfif" alt="shop item" ></div>
+                <div class="item_name">GLIDE</div>
+            </div>
+            <div class="carousel_item">
+                <div class="image_wrapper"> <img src="res/carousel_3.jfif" alt="shop item" ></div>
+                <div class="item_name">PREMIUM STABILIZER</div>
+            </div>
+            <div class="carousel_item">
+                <div class="image_wrapper"> <img src="res/carousel_5.jfif" alt="shop item" ></div>
+                <div class="item_name">MAGNETIC CORE ROBBIN</div>
+            </div>
+            <div class="carousel_item">
+                <div class="image_wrapper"> <img src="res/carousel_4.jfif" alt="shop item" ></div>
+                <div class="item_name">RETAIL DISPLAYS AND KITS</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="locator_banner">
+        <div class="description_div flex_align_center">
+            <div class="description">
+                <span>Retail Store Locator</span>
+                <p>Buy our products in more than 600 retail stores worldwide</p>
+                <button class="transparent_btn">Search retail store</button>    
+            </div>
+        </div>
+        <div class="world_map flex_align_center">
+            <img src="res/world_map.png" alt="world map">
+        </div>
+    </div>
+
+    <div class="carousel_wrapper2">
+        <div class="flex_align_center">
+            <h2>FEATURED PRODUCTS</h2>
+        </div>
+        <div class="carousel2 banner_title_font" id="carousel2">
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_1.png" alt="shop item" ></div>
+                <div class="item_name">EMBORIDERY STABILIZER</div>
+            </div>
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_2.png" alt="shop item" ></div>
+                <div class="item_name">CUBBIE GRAY ELEPHANT</div>
+            </div>
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_3.png" alt="shop item" ></div>
+                <div class="item_name">KIMBERBLL CUP OF CHEER</div>
+            </div>
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_4.png" alt="shop item" ></div>
+                <div class="item_name">KIMBERBELL TWO SCOOPS</div>
+            </div>
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_1.png" alt="shop item" ></div>
+                <div class="item_name">EMBORIDERY STABILIZER</div>
+            </div>
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_2.png" alt="shop item" ></div>
+                <div class="item_name">CUBBIE GRAY ELEPHANT</div>
+            </div>
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_3.png" alt="shop item" ></div>
+                <div class="item_name">KIMBERBLL CUP OF CHEER</div>
+            </div>
+            <div class="carousel_item2">
+                <div class="image_wrapper flex_align_center"> <img src="res/flex_4.png" alt="shop item" ></div>
+                <div class="item_name">KIMBERBELL TWO SCOOPS</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials flex_align_center">
+        <h2>TESTIMONIALS</h2>
+        <p>As a machine quilter, I love the sheen of Glide and how it adds an extra special touch to my quilts. It's the perfect blend of beauty and
+            strength. Not only do I love the thread, but I love working with Hab+Dash to bring out the best in my quilting. They have been an
+            integral part of our Free Motion Quilting Challenges and helped meet our thread needs each time.
+        </p>
+        <div class="author">-Angela Walters-</div>
+        <div class="testimonial_btn_group">
+            <button> < </button>
+            <span id="counter"> 1/10 </span>
+            <button> > </button>
+        </div>
+    </div>
+
+    <div class="footer_spacer"></div>
+
+    <footer class="flex_align_center">
+        <div class="footer_content_wrapper">
+
+            <div class="footer_element">
+                <div class="footer_logo"><img src="res/logo.png" alt="logo"></div>
+                <p>Hab+Dash is a division of the filament 
+                    technologies company, Fil-Tec, Inc. and 
+                    is a proudU.S.A. manufacturer of sewing 
+                    threads and pre-wound bobbins. Our 
+                    wholesale site is dedicated to offering 
+                    our manufactured products to commercial 
+                    embroiderers, long-armquilters and retail 
+                    sewing shops. In addition to the products 
+                    we manufacture, we have sourced the best 
+                    products and accessories to benefit our 
+                    customers.
+                </p>
+                <div class="rights"> 2024 Hab+Dash. All rights reserved.</div>
+            </div>
+
+            <div class="footer_element">
+                <div class="bold_700_14px">SUPPORT</div>
+                <span><a href="#">Stitch Rewards</a></span>
+                <span><a href="#">Core Return Program</a></span>
+                <span><a href="#">FAQs</a></span>
+                <span><a href="#">Terms and Conditions</a></span>
+                <span><a href="#">Online Dealers</a></span>
+            </div>
+
+            <div class="footer_element">
+                <div class="bold_700_14px">USEFUL LINKS</div>
+                <span><a href="#">Digital Color Card</a></span>
+                <span><a href="#">Which Bobbin Fits?</a></span>
+                <span><a href="#">Color Conversion</a></span>
+                <span><a href="#">Stabilizer Application</a></span>
+                <span><a href="#">Selecting a Stabilizer</a></span>
+                <span><a href="#">New Site Features</a></span>
+                <span><a href="#">Institute of Heraldry</a></span>
+                <span><a href="#">Kimberbell Solids</a></span>
+            </div>
+
+            <div class="footer_element">
+                <div class="bold_700_14px">ABOUT US</div>
+                <span><a href="#">Our Story</a></span>
+                <span><a href="#">Show Schedule</a></span>
+                <span><a href="#">Testimonials</a></span>
+            </div>
+
+            <div class="footer_element news_letter">
+                <div class="bold_700_14px">NEWS LETTER SIGN UP</div>
+                <span>Subscribe our newsletter to unlock exclusive access to promotions, new product launches and more!</span>
+                <button class="subscribe_btn btn_font">Subscribe</button>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2eed0d4ce2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
