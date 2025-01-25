@@ -537,5 +537,13 @@ a{
         font-size: 14px;
     }
     
+    .carousel_item2{
+        height: fit-content;
+        width: 100vw;
+    }
+    .carousel_item2 .image_wrapper{
+        height: fit-content;
+        width: 100vw;
+    }
 
 }
