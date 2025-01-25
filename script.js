@@ -1,12 +1,10 @@
-const c_item_width = 459 + 10; //5px margin
+
 let movable = document.getElementById('carousel2');
-let total_distance = c_item_width;
-
-
 let interval_id = setInterval(carousel2_update, 3000);
 
 function carousel2_update(){
-    movable.style = 'transform: translateX(-' + total_distance + 'px)';
+    let c_item_width = document.querySelector('.carousel_item2').offsetWidth + 10; //10 px total margin
+    movable.style = 'transform: translateX(-' + c_item_width + 'px)';
     let current_items = document.getElementsByClassName('carousel_item2');
     setTimeout(() => {
         let tmp = current_items[0];
