@@ -464,19 +464,20 @@ a{
         width: 100%;
     }
     footer, .footer_spacer{
-        height: 850px;
+        height: 1000px;
     }
     
     .footer_content_wrapper{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto;
-        gap: 0;
         justify-content: start;
         align-items: start;
     }
     .footer_element{
         margin-left: 0;
+        padding-left: 2rem;
+        width: fit-content;
     }
 
     .main_banner, .call_to_action{
@@ -488,4 +489,53 @@ a{
     .call_to_action h1{
         text-align: center;
     }
+}
+
+@media (max-width: 603px) {
+    h2{
+        font-size: 25px;
+    }
+    .main_banner{
+        height: 40rem;
+    }
+
+    .carousel_wrapper{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .carousel_item{
+        height: fit-content;
+        width: 100vw;
+    }
+    .carousel_item .image_wrapper{
+        height: 100vw;
+        width: 100vw;
+    }
+    .carousel_controller{
+        padding-right: 0;
+    }
+
+    .description{
+        text-align: center;
+    }
+
+    .description span{
+        font-size: 25px;
+        text-align: center;
+    }
+    .description p{
+        font-size: 37px;
+        text-align: center;
+    }
+
+    .description button{
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+    }
+
+    .testimonials p{
+        font-size: 14px;
+    }
+    
+
 }
